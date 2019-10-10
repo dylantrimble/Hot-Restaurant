@@ -50,6 +50,7 @@ app.get("/reservation", function(req, res) {
 
 // Displays all characters
 app.get("/api/tables", function(req, res) {
+
   return res.json(reservations);
 });
 
@@ -73,14 +74,14 @@ app.get("/api/reservations/:pickles", function(req, res) {
 });
 
 // Create New Characters - takes in JSON input
-app.post("/api/reservations", function(req, res) {
+app.post("/api/tables", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   var newCustomer = req.body;
 
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  newCustomer.customerName = newCustomer.name.replace(/\s+/g, "").toLowerCase();
+//   newCustomer.customerName = newCustomer.customerName.replace(/\s+/g, "").toLowerCase();
 
   console.log(newCustomer);
 
