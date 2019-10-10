@@ -1,0 +1,22 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "Its hot, its a restaurant.",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylantrimble/Hot-Restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylantrimble/Hot-Restaurant/issues"
+  },
+  "homepage": "https://github.com/dylantrimble/Hot-Restaurant#readme"
+}
