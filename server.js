@@ -23,6 +23,15 @@ var reservations = [
   }
 ];
 
+var waitlist = [
+  {
+    customerName: "Jake Fenwick",
+    phoneNumber: "5672830074",
+    customerEmail: "jakefen@gmail.com",
+    customerID: "#12341234123"
+  }
+]
+
 // Routes
 // =============================================================
 
@@ -42,6 +51,10 @@ app.get("/reservation", function(req, res) {
 // Displays all characters
 app.get("/api/tables", function(req, res) {
   return res.json(reservations);
+});
+
+app.get("/api/waitlist", function(req, res) {
+  return res.json(waitlist);
 });
 
 // Displays a single character, or returns false
